@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DBRepository;
+﻿using DBRepository.Factories;
+using DBRepository.Interfaces;
+using DBRepository.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -27,7 +24,6 @@ namespace SimpleBlog
             services.AddMvc();
 
             services.AddScoped<IRepositoryContextFactory, RepositoryContextFactory>();
-
             services.AddScoped<IBlogRepository>(provider =>
                 new BlogRepository(
                     Configuration.GetConnectionString("DefaultConnection"),

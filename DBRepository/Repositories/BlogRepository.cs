@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading.Tasks;
+using DBRepository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Models;
 
-namespace DBRepository
+namespace DBRepository.Repositories
 {
     public class BlogRepository : BaseRepository, IBlogRepository
     {

@@ -1,7 +1,7 @@
 ﻿using Models;
 using System.Threading.Tasks;
 
-namespace DBRepository
+namespace DBRepository.Interfaces
 {
     public interface IBlogRepository
     {

@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DBRepository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
-namespace DBRepository
+namespace DBRepository.Factories
 {
     public class RepositoryContextFactory : IRepositoryContextFactory
     {

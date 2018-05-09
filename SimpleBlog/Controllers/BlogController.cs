@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DBRepository;
+using DBRepository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 

@@ -1,4 +1,6 @@
-﻿namespace DBRepository
+﻿using DBRepository.Interfaces;
+
+namespace DBRepository.Repositories
 {
     public abstract class BaseRepository
     {
