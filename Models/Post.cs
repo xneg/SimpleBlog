@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Models
 {
@@ -6,7 +7,7 @@ namespace Models
     {
         public string Body { get; set; }
 
-        public Comment[] Comments { get; set; }
+        public IEnumerable<Comment> Comments { get; set; }
 
         public DateTime CreateDate { get; set; }
 
@@ -14,6 +15,6 @@ namespace Models
 
         public int PostId { get; set; }
 
-        public Tag[] Tags { get; set; }
+        public IEnumerable<Tag> Tags { get; set; }
     }
 }

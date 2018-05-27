@@ -10,6 +10,6 @@ namespace Models
 
         public int TotalPages { get; set; }
 
-        public List<T> Records { get; set; }
+        public IEnumerable<T> Records { get; set; }
     }
 }
